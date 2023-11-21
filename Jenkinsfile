@@ -7,5 +7,12 @@ pipeline {
       }
     }
 
+    stage('bash scripting') {
+      steps {
+        sh '''ls -la
+echo "its done" '''
+      }
+    }
+
   }
 }
